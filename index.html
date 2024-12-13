@@ -461,18 +461,19 @@
         </div>
         <div class="container">
           <form action="" class="form-style form-subscribe">
-            <label for="" class="footer-paragraph">Subscribe</label>
+            <label for="subscribe-email" class="footer-paragraph">Subscribe</label>
             <div class="form-group">
               <input
                 name="email"
                 type="email"
                 class="form-input"
                 placeholder="E-email"
+                id="subscribe-email"
               />
               <button class="form-btn" type="submit">
                 Subscribe
                 <svg class="svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons2.svg#icon-send"></use>
                 </svg>
               </button>
             </div>
@@ -482,7 +483,35 @@
       </div>
     </footer>
 
-    
+    <div class="modal">
+      <div class="modal-body">
+        <button class="modal-close" type="button">
+          <svg class="svg" width="24" height="24">
+            <use href="./images/icons2.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+        <form action="" class="form-style">
+          <div class="form-group">
+            <label id="form-name" class="form-label">Name</label>
+            <div class="form-group-input">
+              <svg class="svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+              <input name="name" type="text" class="form-input" placeholder="Name" id="form-name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label id="form-name" class="form-label">Name</label>
+            <textarea name="" class="form-input" id=""></textarea>
+          </div>
+          <div class="form-group">
+            <button class="form-btn" type="submit">Send</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
 
   </body>
 </html>

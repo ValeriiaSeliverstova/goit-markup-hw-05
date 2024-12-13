@@ -557,6 +557,18 @@ body {
 .form-style {
 }
 .form-style .form-group {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.form-style .form-group:last-child {
+  margin-bottom: 0;
+}
+.form-style .form-group-input {
+  position: relative;
+  width: 100%;
 }
 .form-style .form-label {
   font-size: 12px;
@@ -578,12 +590,34 @@ body {
 .form-style .form-input::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
+.form-style .form-group-input .svg {
+  position: absolute;
+  fill: #2e2f42;
+  background-color: #000;
+  width: 18px;
+  height: 18px;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.form-style .svg + .form-input {
+  padding-left: 40px;
+}
 .form-style textarea.form-input {
+  min-height: 120px;
+}
+.form-style .form-input:hover,
+.form-style .form-input:focus {
+  border-color: red;
+}
+.form-style .form-group-input:hover .svg,
+.form-style .form-group-input:focus .svg {
+  background-color: red;
 }
 .form-style .form-btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   border-radius: 4px;
@@ -597,6 +631,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  margin: 0 auto;
 }
 
 .form-subscribe {
@@ -605,9 +640,9 @@ body {
   display: block;
 }
 .form-subscribe .form-group {
-  display: flex;
   align-items: center;
   gap: 24px;
+  flex-direction: row;
 }
 .form-subscribe .form-input {
   color: #fff;
@@ -622,4 +657,57 @@ body {
   min-width: 165px;
   min-height: 40px;
   box-shadow: none;
+  margin: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.modal::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+}
+.modal .modal-body {
+  position: relative;
+  z-index: 2;
+  max-width: 408px;
+  margin: 80px auto;
+  padding: 24px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+  border-radius: 4px;
+}
+.modal .modal-close {
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 0 0 0 auto;
+  display: block;
+}
+.modal .modal-close .svg {
+  fill: #2e2f42;
+  width: 8px;
+  height: 8px;
+}
+.modal .modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin: 24px 0 16px;
 }
