@@ -648,17 +648,16 @@ body {
 .form-subscribe {
   display: flex;
   gap: 24px;
+  align-items: center;
+  flex-direction: row;
 }
 
 .form-subscribe .footer-paragraph {
+  max-width: 453px;
   display: flex;
+  gap: 24px;
 }
 
-.form-subscribe .form-group {
-  align-items: center;
-  gap: 24px;
-  flex-direction: row;
-}
 .form-subscribe .form-input {
   color: #fff;
   border-color: #fff;
