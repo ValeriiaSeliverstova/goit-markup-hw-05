@@ -676,7 +676,7 @@ body {
 }
 
 .modal {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -686,6 +686,7 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal::after {
   content: "";
   position: fixed;
