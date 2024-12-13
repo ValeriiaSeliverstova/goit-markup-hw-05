@@ -651,7 +651,7 @@ body {
 }
 
 .form-subscribe .footer-paragraph {
-  display: block;
+  display: flex;
 }
 
 .form-subscribe .form-group {
