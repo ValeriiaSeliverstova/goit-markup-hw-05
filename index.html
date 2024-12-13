@@ -462,7 +462,7 @@
         <div class="container">
           <p class="footer-paragraph">Subscribe</p>
           <form
-            action="https://example.com/subscribe"
+            action="/submit"
             method="post"
             class="form-style form-subscribe"
           >
@@ -474,13 +474,13 @@
                 placeholder="E-mail"
                 id="subscribe-email"
               />
-              <button class="form-btn" type="submit">
-                Subscribe
-                <svg class="svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
             </label>
+            <button class="form-btn" type="submit">
+              Subscribe
+              <svg class="svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -496,9 +496,9 @@
         <h3 class="modal-title">
           Leave your contacts and we will call you back
         </h3>
-        <form action="" class="form-style">
+        <form action="/submit" class="form-style">
           <div class="form-group">
-            <label id="form-name" class="form-label">Name</label>
+            <label for="form-name-order-service" class="form-label">Name</label>
             <div class="form-group-input">
               <svg class="svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram"></use>
@@ -508,13 +508,19 @@
                 type="text"
                 class="form-input"
                 placeholder="Name"
-                id="form-name"
+                id="form-name-order-service"
               />
             </div>
           </div>
           <div class="form-group">
-            <label id="form-name" class="form-label">Name</label>
-            <textarea name="" class="form-input" id=""></textarea>
+            <label for="form-phone-order-service" class="form-label"
+              >Name</label
+            >
+            <textarea
+              name="textarea-message"
+              class="form-input"
+              id="form-phone-order-service"
+            ></textarea>
           </div>
           <div class="form-group">
             <button class="form-btn" type="submit">Send</button>
