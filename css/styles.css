@@ -556,6 +556,7 @@ body {
 
 .form-style {
 }
+
 .form-style .form-group {
   display: flex;
   align-items: flex-start;
@@ -578,17 +579,21 @@ body {
   color: #8e8f99;
 }
 .form-style .form-input {
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  border: 1px solid #ffffff;
   border-radius: 4px;
-  width: 100%;
+  width: 264px;
   height: 40px;
-  padding: 0 16px;
-  color: #000;
+  padding-left: 16px;
+  color: #ffffff;
   outline: none;
   background-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .form-style .form-input::placeholder {
-  color: rgba(46, 47, 66, 0.4);
+  color: #ffffff;
 }
 .form-style .form-group-input .svg {
   position: absolute;
@@ -615,30 +620,40 @@ body {
   background-color: red;
 }
 .form-style .form-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  border-radius: 4px;
+  cursor: pointer;
   padding: 16px 32px;
-  min-width: 169px;
-  min-height: 56px;
+  min-width: 165px;
+  height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
-  border: 1px solid #4d5ae5;
-  display: inline-flex;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   margin: 0 auto;
 }
 
-.form-subscribe {
+.form-style .form-btn .svg {
+  margin-left: 16px;
 }
+
+.form-subscribe {
+  display: flex;
+  gap: 24px;
+}
+
 .form-subscribe .footer-paragraph {
   display: block;
 }
+
 .form-subscribe .form-group {
   align-items: center;
   gap: 24px;
