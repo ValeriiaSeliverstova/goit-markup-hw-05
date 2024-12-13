@@ -743,6 +743,11 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal .modal-close:hover + .svg,
+.modal .modal-close:focus + .svg {
+  fill: #ffffff;
+}
+
 .modal .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -780,6 +785,10 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .form-group .svg:focus {
+.modal .form-group .svg {
+  background: transparent;
+}
+
+.modal .form-group .form-input:focus + .svg {
   fill: #4d5ae5;
 }
