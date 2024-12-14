@@ -707,7 +707,6 @@ body {
   z-index: 2;
   width: 408px;
   min-height: 584px;
-  margin: 80px auto;
   padding: 72px 24px 24px 24px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -766,7 +765,6 @@ body {
 
 .modal .form-label {
   margin-bottom: 4px;
-  gap: 8px;
 }
 
 .modal .form-input {
@@ -813,7 +811,6 @@ body {
 }
 
 .modal .form-group:nth-child(5) .form-label {
-  display: flex;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -830,6 +827,8 @@ body {
 
 .modal .link {
   color: #4d5ae5;
+  display: inline-block;
+  margin-left: 4px;
 }
 
 .modal .visually-hidden {
@@ -844,6 +843,7 @@ body {
 }
 
 .modal .checkbox-icon {
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
