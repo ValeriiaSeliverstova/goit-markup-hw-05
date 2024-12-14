@@ -563,6 +563,7 @@ body {
   flex-direction: column;
   gap: 4px;
   margin-bottom: 8px;
+  position: relative;
 }
 .form-style .form-group:last-child {
   margin-bottom: 0;
@@ -610,7 +611,12 @@ body {
 }
 .form-style textarea.form-input {
   min-height: 120px;
+  padding: 8px 16px;
+  line-height: 1.17;
+  resize: none;
+  color: rgba(46, 47, 66, 0.4);
 }
+
 .form-style .form-input:hover,
 .form-style .form-input:focus {
   border-color: red;
@@ -797,7 +803,7 @@ body {
   margin-bottom: 16px;
   line-height: 1.17;
   color: rgba(46, 47, 66, 0.4);
-  padding: 8px 16px;
+  /*padding: 8px 16px;*/
   resize: none;
 }
 
