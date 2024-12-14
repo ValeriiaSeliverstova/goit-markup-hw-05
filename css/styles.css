@@ -819,7 +819,7 @@ body {
   resize: none;
 }
 
-.modal .form-group:last-child .form-btn {
+.modal .form-group:nth-child(6) {
   display: block;
   min-width: 169px;
   height: 56px;
