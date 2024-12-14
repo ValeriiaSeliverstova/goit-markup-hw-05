@@ -610,7 +610,11 @@ body {
 }
 .form-style textarea.form-input {
   min-height: 120px;
+  padding: 8px 16px;
+  line-height: 1.17;
+  resize: none;
 }
+
 .form-style .form-input:hover,
 .form-style .form-input:focus {
   border-color: red;
