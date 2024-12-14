@@ -821,7 +821,7 @@ body {
   align-items: center;
 }
 
-.modal .form-group .form-btn {
+.modal .form-btn {
   display: block;
   min-width: 169px;
   height: 56px;
@@ -870,7 +870,7 @@ body {
 .modal .visually-hidden:checked + .form-label .checkbox-icon {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
 .modal .visually-hidden:checked + .form-label .checkbox-icon .svg {
