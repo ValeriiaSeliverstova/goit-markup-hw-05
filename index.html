@@ -541,17 +541,34 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="form-phone-order-service" class="form-label"
-              >Text</label
-            >
+            <label for="user-comment" class="form-label">Comment</label>
             <textarea
-              name="textarea-message"
+              name="textarea-comment"
               class="form-input"
-              id="form-phone-order-service"
-            ></textarea>
+              id="user-comment"
+              placeholder="Text input"
+            >
+            </textarea>
           </div>
           <div class="form-group">
-            <button class="form-btn" type="submit">Send</button>
+            <input
+              name="user-privacy"
+              class="visually-hidden"
+              type="checkbox"
+              value="true"
+              id="user-privacy"
+            />
+            <label for="user-comment" class="form-label"
+              >I accept the terms and conditions of the<span
+                class="link-active"
+              >
+                <svg class="svg" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use></svg
+                >Privacy Policy</span
+              ></label
+            >
+          </div>
+          <button class="form-btn" type="submit">Send</button>
           </div>
         </form>
       </div>
